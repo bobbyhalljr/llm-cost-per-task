@@ -1,0 +1,22 @@
+Step 5: same example task, every model
+  turns: 8 (1 retry)
+  cache hit rate: 80.4%
+  claude-sonnet-5-5  $0.1546 per task
+  claude-opus-5-5    $0.2869 per task
+  gpt-6.1-sol        $0.1434 per task
+  grok-4.7           $0.1489 per task
+
+Step 6: break-even token ratio vs claude-sonnet-5-5
+  claude-sonnet-5-5  1.00x the tokens
+  claude-opus-5-5    0.54x the tokens
+  gpt-6.1-sol        1.08x the tokens
+  grok-4.7           1.04x the tokens
+
+Step 7: prompt layout vs model choice (claude-sonnet-5-5)
+  stable prefix:   $0.1546
+  changing prefix: $0.3424
+  changing prefix on grok-4.7: $0.3168
+
+Step 8: ten example runs on gpt-6.1-sol
+  cost  p50 $0.1245  p95 $0.3296
+  time  p50 82.5s   p95 214.5s

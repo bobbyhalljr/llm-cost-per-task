@@ -1,0 +1,26 @@
+{
+  "name": "llm-cost-per-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An LLM cost-per-task calculator in TypeScript. Prices cost a task, not a token. Example inputs, no API key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Bobby Hall Jr (https://bhjr.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyhalljr/llm-cost-per-task.git"
+  },
+  "scripts": {
+    "start": "tsx cost.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx cost.test.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
